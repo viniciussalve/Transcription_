@@ -1,0 +1,306 @@
+{
+    "text": " The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.",
+    "chunks": [
+        {
+            "text": " The",
+            "timestamp": [
+                0,
+                1.66
+            ]
+        },
+        {
+            "text": " stale",
+            "timestamp": [
+                1.66,
+                1.98
+            ]
+        },
+        {
+            "text": " smell",
+            "timestamp": [
+                1.98,
+                2.36
+            ]
+        },
+        {
+            "text": " of",
+            "timestamp": [
+                2.36,
+                2.6
+            ]
+        },
+        {
+            "text": " old",
+            "timestamp": [
+                2.6,
+                2.88
+            ]
+        },
+        {
+            "text": " beer",
+            "timestamp": [
+                2.88,
+                3.14
+            ]
+        },
+        {
+            "text": " lingers.",
+            "timestamp": [
+                3.14,
+                3.96
+            ]
+        },
+        {
+            "text": " It",
+            "timestamp": [
+                4.64,
+                4.64
+            ]
+        },
+        {
+            "text": " takes",
+            "timestamp": [
+                4.64,
+                4.98
+            ]
+        },
+        {
+            "text": " heat",
+            "timestamp": [
+                4.98,
+                5.28
+            ]
+        },
+        {
+            "text": " to",
+            "timestamp": [
+                5.28,
+                5.46
+            ]
+        },
+        {
+            "text": " bring",
+            "timestamp": [
+                5.46,
+                5.64
+            ]
+        },
+        {
+            "text": " out",
+            "timestamp": [
+                5.64,
+                5.88
+            ]
+        },
+        {
+            "text": " the",
+            "timestamp": [
+                5.88,
+                6.08
+            ]
+        },
+        {
+            "text": " odor.",
+            "timestamp": [
+                6.08,
+                6.5
+            ]
+        },
+        {
+            "text": " A",
+            "timestamp": [
+                7.2,
+                7.32
+            ]
+        },
+        {
+            "text": " cold",
+            "timestamp": [
+                7.32,
+                7.62
+            ]
+        },
+        {
+            "text": " dip",
+            "timestamp": [
+                7.62,
+                8.06
+            ]
+        },
+        {
+            "text": " restores",
+            "timestamp": [
+                8.06,
+                8.48
+            ]
+        },
+        {
+            "text": " health",
+            "timestamp": [
+                8.48,
+                8.9
+            ]
+        },
+        {
+            "text": " and",
+            "timestamp": [
+                8.9,
+                9.14
+            ]
+        },
+        {
+            "text": " zest.",
+            "timestamp": [
+                9.14,
+                9.62
+            ]
+        },
+        {
+            "text": " A",
+            "timestamp": [
+                10.04,
+                10.28
+            ]
+        },
+        {
+            "text": " salt",
+            "timestamp": [
+                10.28,
+                10.64
+            ]
+        },
+        {
+            "text": " pickle",
+            "timestamp": [
+                10.64,
+                11.06
+            ]
+        },
+        {
+            "text": " tastes",
+            "timestamp": [
+                11.06,
+                11.38
+            ]
+        },
+        {
+            "text": " fine",
+            "timestamp": [
+                11.38,
+                11.66
+            ]
+        },
+        {
+            "text": " with",
+            "timestamp": [
+                11.66,
+                11.86
+            ]
+        },
+        {
+            "text": " ham.",
+            "timestamp": [
+                11.86,
+                12.3
+            ]
+        },
+        {
+            "text": " Tacos",
+            "timestamp": [
+                12.82,
+                13.06
+            ]
+        },
+        {
+            "text": " al",
+            "timestamp": [
+                13.06,
+                13.24
+            ]
+        },
+        {
+            "text": " pastor",
+            "timestamp": [
+                13.24,
+                13.56
+            ]
+        },
+        {
+            "text": " are",
+            "timestamp": [
+                13.56,
+                13.9
+            ]
+        },
+        {
+            "text": " my",
+            "timestamp": [
+                13.9,
+                14.1
+            ]
+        },
+        {
+            "text": " favorite.",
+            "timestamp": [
+                14.1,
+                14.52
+            ]
+        },
+        {
+            "text": " A",
+            "timestamp": [
+                15.32,
+                15.38
+            ]
+        },
+        {
+            "text": " zestful",
+            "timestamp": [
+                15.38,
+                15.84
+            ]
+        },
+        {
+            "text": " food",
+            "timestamp": [
+                15.84,
+                16.2
+            ]
+        },
+        {
+            "text": " is",
+            "timestamp": [
+                16.2,
+                16.5
+            ]
+        },
+        {
+            "text": " the",
+            "timestamp": [
+                16.5,
+                16.7
+            ]
+        },
+        {
+            "text": " hot",
+            "timestamp": [
+                16.7,
+                16.96
+            ]
+        },
+        {
+            "text": " cross",
+            "timestamp": [
+                16.96,
+                17.32
+            ]
+        },
+        {
+            "text": " bun.",
+            "timestamp": [
+                17.32,
+                17.88
+            ]
+        }
+    ]
+}
