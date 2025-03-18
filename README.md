@@ -14,6 +14,7 @@ This tool fetches an audio file from a URL, processes it to meet the requirement
 - Resampling to 16kHz (required by Whisper)
 - Word-level timestamps in transcription output
 - Chunking support for longer audio files
+- Configurable via environment variables
 
 ## Prerequisites
 
@@ -31,11 +32,13 @@ npm install
 yarn install
 ```
 
+Note: This project uses ES modules. The package.json includes `"type": "module"`.
+
 ## Dependencies
 
-- [@huggingface/transformers](https://www.npmjs.com/package/@huggingface/transformers) - For accessing the Whisper speech recognition model
-- [wavefile](https://www.npmjs.com/package/wavefile) - For processing WAV audio files
-- [fs](https://nodejs.org/api/fs.html) - Node.js file system module
+- [@huggingface/transformers](https://www.npmjs.com/package/@huggingface/transformers) (v3.4.0) - For accessing the Whisper speech recognition model
+- [wavefile](https://www.npmjs.com/package/wavefile) (v11.0.0) - For processing WAV audio files
+- Node.js built-in modules: fs, path
 
 ## Usage
 
@@ -48,18 +51,29 @@ node transcription.js
 The script will:
 1. Fetch the audio file from the specified URL
 2. Process the audio to meet Whisper's requirements
-3. Transcribe the audio using the Whisper tiny.en model
-4. Save the transcription to `./audios/transcription.json`
-5. Log the execution time and transcription output
+3. Transcribe the audio using the Whisper model
+4. Save the transcription to the configured output location (default: `./audios/transcription.json`)
+5. Log the execution time and transcription summary
 
 ## Configuration
 
-The script uses the following configuration:
+The script can be configured using environment variables:
 
-- Model: `Xenova/whisper-tiny.en` (a small English Whisper model)
-- Chunk length: 30 seconds
-- Stride length: 5 seconds
-- Output includes word-level timestamps
+| Environment Variable    | Default Value                | Description                                  |
+|------------------------|------------------------------|----------------------------------------------|
+| TRANSCRIPTION_MODEL    | Xenova/whisper-tiny.en       | Which Whisper model to use                   |
+| AUDIO_URL              | (Default sample URL)         | URL of the audio file to transcribe          |
+| CHUNK_LENGTH_S         | 30                           | Audio chunk length in seconds                |
+| STRIDE_LENGTH_S        | 5                            | Stride length between chunks in seconds      |
+| RETURN_TIMESTAMPS      | word                         | Timestamp granularity (word or chunk)        |
+| OUTPUT_DIR             | ./audios                     | Directory to save the transcription          |
+| OUTPUT_FILE            | transcription.json           | Filename for the transcription output        |
+
+Example of running with environment variables:
+
+```bash
+TRANSCRIPTION_MODEL="Xenova/whisper-small.en" AUDIO_URL="https://example.com/audio.wav" node transcription.js
+```
 
 ## Output Format
 
@@ -78,16 +92,17 @@ The transcription is saved as a JSON file with the following structure:
 }
 ```
 
+## Error Handling
+
+The script includes robust error handling for:
+- Failed audio file fetching (including URL expiration detection)
+- Audio processing issues
+- Directory creation failures
+- Transcription failures
+
 ## Performance
 
 The script includes timing measurements to track execution duration, which is logged upon completion.
-
-## Error Handling
-
-The script includes error handling for:
-- Failed audio file fetching
-- Audio processing issues
-- Transcription failures
 
 ## License
 
